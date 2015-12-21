@@ -1,0 +1,119 @@
+﻿html, body {
+    margin:0;
+    padding:0;
+}
+.picContainer{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    overflow:hidden;
+    text-align:center;
+}
+.pic1{
+    width:100%;
+    height:100%;
+    font-family:lobsterIt;
+    z-index:9;
+}
+#pic1-1{
+    width:100%;
+    height:25%;
+    background:#0B1724;
+}
+#pic1-2{
+    width:100%;
+    height:25%;
+    background:#0B1724;
+}
+#pic1-3{
+    width:100%;
+    height:25%;
+    background:#0B1724;
+}
+#pic1-4{
+    width:100%;
+    height:25%;
+    background:#0B1724;
+}
+#welcomeTxt{
+    font-size:3.5em;
+    color:#ede9e9;
+    margin:0;
+    position:relative;
+    top:1em;
+}
+#moreInfoTxt{
+    font-size:1.5em;
+    position:relative;
+    top:0;
+    color:#ede9e9;
+    margin:0;
+}
+#scroll-icon {
+    font-family: fontAw;
+    margin: 0 auto;
+    position: relative;
+    top:1.5em;
+    font-size: 1.5em;
+    color: #ede9e9;
+    -moz-animation: blink 1s ease-in-out infinite alternate;
+    -o-animation: blink 1s ease-in-out infinite alternate;
+    -webkit-animation: blink 1s ease-in-out infinite alternate;
+    animation: blink 1s ease-in-out infinite alternate;
+}
+#myPic {
+    width: 5em;
+    height: 5em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border:0.5em solid #ede9e9;
+    background:url('../img/user.bmp') no-repeat center;
+    background-size:contain;
+    position:relative;
+    top:3em;
+    left:4em;
+}
+#pic2{
+    width:100%;
+    height:100%;
+    background:white;
+}
+@font-face {
+    font-family: 'lobsterIt';
+    src: url('../font/LobsterTwo-Italic.ttf');
+}
+@font-face {
+    font-family: 'fontAw';
+    src: url('../font/fontawesome-webfont.ttf');
+}
+@keyframes blink {
+    from {
+        color: #ede9e9;
+    }
+
+    to {
+        color: rgba(237, 233, 233, 0.00);
+    }
+}   
+
+@-moz-keyframes blink {
+    from {
+        color: #ede9e9;
+    }
+
+    to {
+        color: rgba(237, 233, 233, 0.00);
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        color: #ede9e9;
+    }
+
+    to {
+        color: rgba(237, 233, 233, 0.00);
+    }
+}
