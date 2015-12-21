@@ -71,14 +71,33 @@
     border:0.5em solid #ede9e9;
     background:url('../img/user.bmp') no-repeat center;
     background-size:contain;
-    position:relative;
-    top:3em;
-    left:4em;
+    position:fixed;
+    top:5.5em;
+    left:7.5em;
+    display:inline-block;
+    margin:-2.5em -2.5em;
+    z-index:10;
 }
-#pic2{
+.pic2{
     width:100%;
     height:100%;
-    background:white;
+    background:#49A8FF;
+    position:fixed;
+    top:0;
+    z-index:8;
+    display:none;
+}
+#pic2-1{
+    width:100%;
+    height:33%;
+}
+#pic2-2{
+    width:100%;
+    height:33%;
+}
+#pic2-3{
+    width:100%;
+    height:33%;
 }
 @font-face {
     font-family: 'lobsterIt';
