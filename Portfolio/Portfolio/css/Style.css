@@ -122,8 +122,9 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border:0.5em solid #ede9e9;
-    background:url('../img/user.bmp') no-repeat center;
-    background-size:contain;
+    background:url('../img/photo431548307084519512.jpg') no-repeat center;
+    background-size:cover;
+    background-position-x:-0.1em;
     position:fixed;
     top:6.5em;
     left:7.5em;
