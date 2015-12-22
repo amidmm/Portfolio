@@ -60,14 +60,17 @@
 }
 #aboutMe {
     width: 80%;
-    height: 70%;
+    height: 65%;
     margin: 0 auto;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color:white;
     position:relative;
-    margin-top:7.5em;
+    margin-top:4em;
+    padding-top:2.5em;
+    font-family:LatoL;
+    font-size:1.5em;
 }
 #pic1-7{
     width:25%;
@@ -175,7 +178,7 @@
 }
 .pic3{
     width:100%;
-    height:100%;
+    height:200%;
     background:#1A8583;
     position:fixed;
     top:0;
@@ -184,15 +187,18 @@
 }
 #pic3-1{
     width:100%;
-    height:33%;
+    height:16.6%;
+    overflow:hidden;
 }
 #pic3-2{
     width:100%;
-    height:33%;
+    height:16.6%;
+    overflow:hidden;
 }
 #pic3-3{
     width:100%;
-    height:33%;
+    height:16.6%;
+    overflow:hidden;
 }
 
 
@@ -205,6 +211,12 @@
     font-family: 'fontAw';
     src: url('../font/fontawesome-webfont.ttf');
 }
+@font-face {
+    font-family: 'LatoL';
+    src: url('../font/Lato-Light.ttf');
+}
+
+
 @keyframes blink {
     from {
         color: #ede9e9;
