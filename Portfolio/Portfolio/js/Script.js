@@ -30,12 +30,14 @@
             $('#pic1-4').css('transform', 'translateX(-' + scrolled/2 + 'px)');
             $('#pic1-5').css('transform', 'translateY(' + scrolled/2 + 'px)');
             $('#pic1-6').css('transform', 'translateY(-' + scrolled/2 + 'px)');
-            $('#pic1-7').css('transform', 'translateY(' + scrolled/2 + 'px)');
+            $('#pic1-7').css('transform', 'translateY(' + scrolled / 2 + 'px)');
+            $('#myPic').fadeIn('slow');
             
         }
         else if (scrolled < $(window).width()*4) {
             $('.pic1').css('display', 'none');
             $('.pic2').css('display', 'block');
+            $('#myPic').fadeOut('slow');
         };
     });
 });
