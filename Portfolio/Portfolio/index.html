@@ -4,32 +4,61 @@
     <title>Amid Moeinzadeh</title>
 	<meta charset="utf-8" />
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
     <script src="js/Script.js"></script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".panel",
+                easing: "easeOutExpo",
+                scrollable:"true",
+            });
+        });
+    </script>
     <link href="css/Style.css" rel="stylesheet" />
 </head>
 <body>
     <div class="picContainer">
-        <div id="myPic" title="Amid Moeinzadeh"></div>
+        
         <div class="pic1">
-            <div id="pic1-1">
-                
+            <div class="panel" id="p1">
+                <div id="pic1-1">
+
+                </div>
+                <div id="pic1-2">
+                    <p id="welcomeTxt">Welcome to my personal website</p>
+                </div>
+                <div id="pic1-3">
+                    <p id="moreInfoTxt">Use your keyboard arrows to see more!</p>
+                    <p id="scroll-icon">&#xf063;</p>
+                </div>
+                <div id="pic1-4"></div>
             </div>
-            <div id="pic1-2">
-                <p id="welcomeTxt">Welcome to my personal website</p>
+            <div class="panel" id="p2">
+                <div id="pic1-5"></div>
+                <div id="pic1-6">
+                    <div id="aboutMe"></div>
+                </div>
+                <div id="pic1-7"></div>
             </div>
-            <div id="pic1-3">
-                <p id="moreInfoTxt">Scroll to see more</p>
-                <p id="scroll-icon">&#xf063;</p>
-            </div>
-            <div id="pic1-4"></div>
-            <div id="pic1-5"></div>
-            <div id="pic1-6">
-                <div id="aboutMe"></div>
-            </div>
-            <div id="pic1-7"></div>
-            
         </div>
+        <div id="myPic" title="Amid Moeinzadeh"></div>
         <div class="pic2">
+            <span id="recentTxt">My recent works:</span>
+            <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body"></div>
+            </div>
+            <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body"></div>
+            </div>
+            <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body"></div>
+            </div>
+        </div>
+        <div class="pic3">
             <div id="pic2-1">
                 sth
             </div>
@@ -40,7 +69,6 @@
                 sth
             </div>
         </div>
-        <div class="pic3"></div>
         <div class="pic4"></div>
     </div>
     <div style="height:7000px;"></div>
