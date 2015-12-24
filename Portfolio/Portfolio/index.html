@@ -6,18 +6,23 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/Script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
         $(function () {
             $.scrollify({
                 section: ".panel",
                 easing: "easeOutExpo",
-                scrollable:"true",
+                scrollable: "true",
             });
         });
     </script>
     <link href="css/Style.css" rel="stylesheet" />
 </head>
 <body>
+    <div id="popup">
+        <span>It's better to rotate your device :)</span><br /><br />
+        <span>click on me!</span>
+    </div>
     <div class="picContainer">
         
         <div class="pic1">
@@ -41,7 +46,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat voluptatum in eligendi repudiandae, autem porro optio nihil, distinctio suscipit labore, obcaecati praesentium. Magnam quod eaque quos veniam autem debitis harum pariatur illum beatae ratione molestias necessitatibus, temporibus architecto, dicta, iure adipisci. Eveniet perspiciatis quidem quibusdam ad deserunt, impedit odit tempore voluptatum nostrum aperiam expedita iusto ut vero deleniti quas doloremque tempora molestiae quod distinctio eius. Eos eveniet temporibus quisquam iste voluptatem consequuntur ea dolor, deleniti inventore quas, corrupti.
                     </div>
                 </div>
-                <div id="pic1-7"></div>
+                <div id="pic1-7">
+                    <div class="next" onclick="nextSec()">&#xf063;</div>
+                </div>
             </div>
         </div>
         <div id="myPic" title="Amid Moeinzadeh"></div>
@@ -74,5 +81,11 @@
         <div class="pic4"></div>
     </div>
     <div id="rest"></div>
+    <script>
+        function nextSec() {
+            $.scrollify.disable();
+            $(this).scrollTop($(window).width() * 2+10 + $(this).scrollTop());
+        }
+    </script>
 </body>
 </html>
