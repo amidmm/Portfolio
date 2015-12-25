@@ -178,28 +178,58 @@
 .card {
     width: 20%;
     height: 50%;
-    margin:3em auto;
-    margin-left:2em;
-    position:relative;
-    top:30%;
+    margin: 3em auto;
+    margin-left: 2em;
+    position: relative;
+    top: 30%;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background:rgba(255, 255, 255, 0.95);
-    color:#262626;
-    display:inline-block;
+    background: rgba(255, 255, 255, 0.95);
+    color: #262626;
+    display: inline-block;
 }
-.card-header{
-    width:100%;
-    margin:0 0;
-    height:70%;
-    border-bottom:1px solid rgba(38, 38, 38, 0.70);
+.card:hover > .card-header{
+    height:80%;
+}
+.card-header > img{
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+}
+.card:hover > .card-header > img {
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+.card-header {
+    width: 100%;
+    margin: 0 0;
+    height: 70%;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid rgba(38, 38, 38, 0.70);
+    -moz-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    overflow: hidden;
 }
 .card-body{
     width:100%;
     margin:0 0;
     padding:0.5em 0.5em;
     height:30%;
+    font-family:LatoL;
 }
 .pic3{
     width:100%;
